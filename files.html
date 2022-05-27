@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Downloads</title>
+		<meta charset="utf-8">
+		<script>
+			function takeTime()
+			{
+				var today = new Date();
+				var date = today.getDate()+'/'+(today.getMonth()+1)+'/'+today.getFullYear();
+				var time = today.getHours()+':'+today.getMinutes();
+				var datetime = date+' '+time;
+				document.write(datetime);	
+			}	
+		</script>
+		<style>
+			body
+			{
+				background-image: url(Imagine/wp5888119.jpg);
+				background-repeat: no-repeat;
+				background-position: center center;
+				background-attachment: fixed;
+			}
+			th
+			{
+				font-family: Times New Roman;
+				font-size:25px;
+				font-weight:25px;
+				font-style: bold;
+				color:darkblue;
+			}
+			td
+			{
+				font-family: Times New Roman;
+				font-size:20px;
+				font-weight:20px;
+				color:blue;
+			}
+		</style>
+	</head>
+	<body>
+		<table border="0">
+			<tr>
+				<th>Name</th>
+				<th>Last Modified</th>
+				<th>Size</th>
+				<th>Description</th>
+			</tr>
+			<tr>
+				<td><a href="Download/hello.txt" download>Hello.txt</a></td>
+				<td><time><script>takeTime()</script></time></td>
+				<td>1 KB</td>
+			</tr>
+			<tr>
+				<td><a href="Download/WhatisaSocket.mp4" download>What is a Socket.mp4</a></td>
+				<td><time><script>takeTime()</script></time></td>
+				<td>1.706 KB</td>
+			</tr>
+			<tr>
+				<td><a href="Download/WebSocket.jpg" download>WebSocket.jpg</a></td>
+				<td><time><script>takeTime()</script></time></td>
+				<td>55 KB</td>
+			</tr>
+			<tr>
+				<td><a href="Download/RiverFlowsInYou.mp3" download>River Flows In You.mp3</a></td>
+				<td><time><script>takeTime()</script></time></td>
+				<td>1.706 KB</td>
+			</tr>
+		</table>
+	</body>
+</html>
+
+
+
